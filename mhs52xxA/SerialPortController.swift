@@ -31,7 +31,9 @@ class SerialPortController : NSObject, ORSSerialPortDelegate {
         let command = commandStr.data(using: String.Encoding.ascii)!
         
         self.commandsPending += 1
-        print("|\(self.commandsPending) \(commandStr)|")
+        // Debug statement
+        //print("|\(self.commandsPending) \(commandStr)|")
+        //
         let request = ORSSerialRequest(dataToSend: command,
                                        userInfo: self.commandsPending,
                                        timeoutInterval: cmdTimeout,
@@ -49,7 +51,7 @@ class SerialPortController : NSObject, ORSSerialPortDelegate {
         if(self.commandsPending == 0) {exit(0)}
     }
     func serialPort(_ serialPort:ORSSerialPort, request: ORSSerialRequest) {
-        print(">t \(request.responseDescriptor.debugDescription)")
+        print(">timeout \(request.responseDescriptor.debugDescription)")
     }
 
     func serialPortWasRemovedFromSystem(_: ORSSerialPort) {

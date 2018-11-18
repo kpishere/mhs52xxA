@@ -33,7 +33,7 @@ func printUsage() {
         , "There can be N number of optional commands sent to device, in order specified."
         , "The intent is to form commands for device setup or loading of arbitrary waveforms."
         , ""
-        , "Example: \(CommandLine.arguments[0]) /dev/cu.whcf010 -c s1b0 -c s1w1 -l a#E ~/data.csv -c s1w15 -c s1f15000 -c s11"
+        , "Example: \(CommandLine.arguments[0]) /dev/cu.whcf010 -c s1b0 -c s1w1 -l aE# ~/data.csv -c s1w15 -c s1f15000 -c s11"
         , "This example turns of Channel 1, switches waveform to sine wave, loads arbitrary waveform 15 from data.csv, switches waveform to arb. 15, sets frequency 1.5kHz, and turns on channel 1."
     ]
     
