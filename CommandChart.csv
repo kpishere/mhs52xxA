@@ -1,0 +1,30 @@
+Command,description,Returns,Notes
+:r0c,Version 5225A Firmware 5.04,:r0c5225A5040000,
+:r1c,,":r1c
+225A5040000",
+:r2c,As above,":r1c
+225A5040000",
+:sXfN,Set frequency N for Channel X,ok,(200000 = 2kHz)
+:sXwN,Set wave type to N for channel X,ok,"N: 0=sine, 1=square, 2=tri,3=up,4=dn, 100=arb0...115=arb15 "
+:sXdN,Set duty to N for channel X,ok,5% = 50
+:sXoN,Set offset to N for channel X,ok,0% = 120 (Offset is not consistent between wave types)
+:sXpN,Set phase to N for channel X,ok,0-359
+:sXyN,Set attenuation to N for channel X,ok,"1 = 0db, 0 = -20db"
+:sXaN,Set amplitude to N for channel X,ok,5.00V = 500
+:sXbN,Set on/off by N for channel X,ok,"1=on, 0=off"
+:s3bN,Set trace on/off by N,ok,"1=on, 0=off"
+:s4bN,Select ext in or ttl by N,ok,0=ext 1=ttl
+:sNg,Set gate value,ok,"N=0 (1s),1 (10s), 2 (.01s) ,3 (.1s)"
+:s3fN,Set sweep start N frequency,ok,
+:s4fN,Set sweep stop N frequency,ok,
+:s5tN,Set sweep time N seconds,ok,
+:s5bN,Reset counter when in counter mode,ok,"1=reset, 0=stop"
+:s6bN,Set run/stop state when in counter mode,ok,"0=stop, 1=run"
+:s7bN,Set sweep mode Linear/Log N,ok,"0=Lin, 1=Log"
+:s8bN,Set start/stop sweep mode,ok,"0=stop, 1=start"
+":aXN(int,…)",Set arbitrary waveform X bank N values. “(…)” are replaced by comma separated list of values.,ok,"X = 0..E for arb. 0 to arb. 15 waveforms,  N = 0..F for each bank of data.  Bank = 1024 or 2048 values / 16.  Values are 0..255 for 8-bit samples, 0-4095 for 12-bit samples."
+:s9bN,Turn on/off power amp by N,ok,"0=off, 1=on"
+:sNm,Set MSR-mode Counter/Freq.gen/+ pulse width/- pulse width/period/duty by N,ok,"0=freq.gen,1=counter,2=+ pulse, 3=- pulse, 4=period, 5=duty"
+:rXm,Read MSR-mode where X value is ignored,:rXm,Returns X value for msr-mode
+:sAv,Store settings in memory location A,ok,A=0..9
+:sAu,Load settings from memory location A,ok,A=0..9
