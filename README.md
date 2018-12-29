@@ -10,3 +10,5 @@ So, for those not interested/willing to use windows .. here is a 100% OSX/MacOS 
 The gist of how the program works is you simply provide the serial device path, then you chain each command you want sent to the unit in the order you wish them sent.  There are three types of commands to send, one that expects just 'ok', another that expects a result, and a third that allows you to reference a file with data points to upload for the arbitrary waveform generator.
 
 This repository has a pre-built version of the program in it in a *.tgz file if you don't want to fire up XCode compiler.
+
+There is a YouTube video demonstrating usage of this tool at https://youtu.be/43wMURP_9eg 
