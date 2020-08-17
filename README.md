@@ -29,7 +29,7 @@ then you'd run the command like this to load it and turn it on :
 `mhs52xxA /dev/cu.wchusbserial1420 -c s1b0 -l a0# ~/data.txt -c s1w100 -c s1f24547 -c s1a500 -c s1b1`
 
 you'd see the following output : 
-'''
+```
 queued: s1b0 ...
 queued: s2b0 ...
 queued: a00 ...
@@ -58,4 +58,4 @@ ok
 
 ok
 ...('ok' for each queued line above)...
-'''
+```
