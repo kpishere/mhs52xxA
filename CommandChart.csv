@@ -5,7 +5,7 @@ Command,description,Returns,Notes
 :r2c,As above,":r1c
 225A5040000",
 :sXfN,Set frequency N for Channel X,ok,(200000 = 2kHz)
-:sXwN,Set wave type to N for channel X,ok,"N: 0=sine, 1=square, 2=tri,3=up,4=dn, 100=arb0...115=arb15 "
+:sXwN,Set wave type to N for channel X,ok,"N: 0=sine, 1=square, 2=tri,3=up,4=dn, 100=arb0...115=arb15"
 :sXdN,Set duty to N for channel X,ok,5% = 50
 :sXoN,Set offset to N for channel X,ok,0% = 120 (Offset is not consistent between wave types)
 :sXpN,Set phase to N for channel X,ok,0-359
