@@ -3,7 +3,7 @@
 //  mhs52xxA
 //
 //  Created by Kevin Peck on 2018-11-15.
-//  Copyright © 2018 House of Kevin Peck. All rights reserved.
+//  Copyright © 2018  GPL-3.0 License
 //
 
 import Foundation

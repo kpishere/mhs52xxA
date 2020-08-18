@@ -3,7 +3,7 @@
 //  mhs52xxA
 //
 //  Created by Kevin Peck on 2018-11-14.
-//  Copyright © 2018 House of Kevin Peck. All rights reserved.
+//  Copyright © 2018  GPL-3.0 License
 //
 
 import Foundation
@@ -33,8 +33,11 @@ func printUsage() {
         , "There can be N number of optional commands sent to device, in order specified."
         , "The intent is to form commands for device setup or loading of arbitrary waveforms."
         , ""
-        , "Example: \(CommandLine.arguments[0]) /dev/cu.whcf010 -c s1b0 -c s1w1 -l aE# ~/data.csv -c s1w15 -c s1f15000 -c s11"
-        , "This example turns of Channel 1, switches waveform to sine wave, loads arbitrary waveform 15 from data.csv, switches waveform to arb. 15, sets frequency 1.5kHz, and turns on channel 1."
+        , "Example: \(CommandLine.arguments[0]) /dev/cu.whcf010 -c s1b0 -c s1w1 -l aE# ~/data.txt -c s1w115 -c s1f15000 -c s1b1 "
+        , "This example turns OFF channel 1, sets waveform to sine wave on channel 1, loads data to arbitrary waveform 15 "
+        , "from data.txt, sets waveform arb. 15 to channel 1, sets frequency 1.5kHz, and turns ON channel 1."
+        , ""
+        , "NOTE: content of data.txt file is a single number for each line -- EVERY line with a number must end with a newline character."
     ]
     
     print(msg.joined(separator:"\n"))
